@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        
+        
+       .form2{
+        margin-left: 150px;
+        margin-right: 150px;
+        height:50px;
+       }
+         .h1{
+            text-align: center;
+            font-weight: 200;
+            font-size: 60px;
+            color:black;
+            margin-top: 20px;;
+         }
+         .btn1{
+            border:4px solid orange ;
+                color:rgb(17, 19, 20);
+                background-color: orange;
+                text-decoration:none;
+                padding:6px;
+                border-radius: 5px;
+         }
+         .tablediv{
+            margin-top: 30px;
+         }
+         .imgback{
+           margin-left:40px;
+            height:330px;
+            width:470px;
+            display: inline;
+            border-radius: 15px;
+            
+         }
+         .imgback:hover{
+          opacity:0.8;
+         }
+         .imgback3:hover{
+          opacity:0.8;
+         }
+         .imgback3{
+            height:330px;
+            width:470px;
+            border-radius: 15px;
+            margin-left: 40px;
+         }
+         .hdiv{
+            margin-left:50px;
+            height:50px;
+         }
+         h2{
+            font-weight: 400;
+            font-size: 30px;
+         }
+         h4{
+            font-weight: 200;
+            
+         }
+         .middiv{
+          background-color:white;
+          align-content: center;
+          height:100px;
+          margin-top: 40px;
+          
+         }
+         .td{
+         
+          margin-top: 70px;
+         }
+         .imgtop{
+            height:300px;
+            width: 350px;
+            border-radius: 8px;
+         }
+         .imgtop:hover{
+          opacity:0.7;
+
+         }
+         .btn{
+          border:4px solid orange ;
+                color:rgb(17, 19, 20);
+                background-color:orange;
+                text-decoration:none;
+                padding:5px;
+         }
+         .div2{
+          font-size: 30px;
+          font-family:'Times New Roman', Times, serif;
+         }
+         body{
+          font-family: 'Times New Roman', Times, serif;
+         }
+         .nav3{
+          
+          font-size: 18px;
+          color:rgb(128, 44, 44);
+         }
+         .tabledesrip{
+          text-align: justify;
+          margin:0;
+         }
+         .tablediv3{
+          background-color: rgb(21, 74, 74);
+          height:400px;
+          padding: 25px;
+          margin-right:45px;
+          color:white;
+          font-size: 14px;
+         }
+         
+        
+         .text h2{
+          font-size: 40px;
+          font-weight: 650;
+          margin-top: 40px;
+          margin-bottom: 10px;
+          line-height: 2;
+          text-align: center;
+        }
+        .rowitems{
+           display: grid;
+           grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+           gap: 25px;align-items: center;
+           text-align: center;
+           margin-top: 20px;
+           margin-left: 30px ;
+           margin-right: 30px;
+           margin-bottom:10px ;
+          }
+          .container-box{
+            border: 1px solid #d3d3d3;
+            border-radius: 5px;
+            padding: 50px 10px;
+            transition: all 0.7s ease 0s;
+            cursor: pointer;
+          }
+
+.container-image img{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.container-box h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 550;
+}
+
+.container-box p{
+    font-size: 16px;
+    color: #808080;
+}
+
+.container-box:hover{
+    transform: translateX(3px);
+    box-shadow: 5px 20px 50px rgba(78, 78, 78, 0.1);
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+nav{
+    width: 100%;
+    /* position: fixed; */
+    background-color: rgb(21, 74, 74);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 250px;
+    margin: 2vh;
+    margin-left: 8%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 4vh;
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s;
+}
+
+.navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+       
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <nav>
+      <img src="images/triplogo2.svg" class="logo" alt="Logo" title="FirstFlight Travels">
+      
+      <ul class="navbar">
+          <li>
+              <a href="#home">Home</a>
+              <a href="navbar2.html">hotels</a>
+              <a href="#package">Packages</a>
+              <a href="">About Us</a>
+              <a href="">Contact Us</a>
+              <a  href="login.html" >Signup</a>
+              
+          </li>
+      </ul>
+  </nav>
+      <div>
+        <h1 class="h1" >Where To?</h1>
+      </div>
+      <ul class="nav justify-content-center nav3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Speacial Offer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Vacations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Meetings and Events</a>
+        </li>
+      
+      </ul>
+      <div>
+        <form class="d-flex form2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+      <section class="container">
+        <div class="text">
+            <h2>We have the best services available for you!</h2>
+        </div>
+        <div class="rowitems">
+            <div class="container-box">
+            <div class="container-image">
+               <img src="images/1a.jpg" alt="Flight Services">
+            </div>
+                <h4>Flight Services</h4>
+                <p>Arrival and Departure</p>
+            </div>
+        
+            <div class="container-box">
+            <div class="container-image">
+               <img src="images/2a.jpg" alt="Food Services">
+            </div>
+                <h4>Food Services</h4>
+                <p>Catering</p>
+            </div>
+    
+            <div class="container-box">
+            <div class="container-image">
+                <img src="images/3a.jpg" alt="Travel Services">
+            </div>
+                <h4>Travel Services</h4>
+                <p>Pick-up/drop</p>
+            </div>
+    
+            <div class="container-box">
+            <div class="container-image">
+                <img src="images/4a.jpg" alt="Hotel Services">
+            </div>
+                <h4>Hotel Services</h4>
+                <p>Check-in/out</p>
+            </div>
+    
+        </div>
+    
+        </div>
+    
+    </section>
+      <div class="tablediv">
+        <div class="text">
+          <h2>We have the best places available for you!</h2>
+      </div>
+      <table cellpadding="5px">
+        <tr>
+            <td><img  class="imgback"src="images/jaipur2.jpg"></td>
+            <td><img  class="imgback"src="images/pangong.jpg"></td>
+            <td><img  class="imgback3"src="images/shankaracharya-temple.jpg"></td>
+        </tr>
+      </table>
+
+
+
+
+      </div>
+     
+    
+    
+           
+
+
+
+      <div class="hdiv">
+        <div class="middiv">
+        <h2 ><b>Explore Top-Rated Destinations</b></h2>
+        <h4><b>2025’s Travellers’ Choice Awards Best of the Best Destinations</b></h4></div>
+        <table cellpadding="10">
+            <tr>
+                <td><img  class="imgtop" src="images/topdesti.jpg"></td>
+                <td><img  class="imgtop" src="images/trenddesti.jpg"></td>
+                <td><img  class="imgtop"src="images/fooddesti.jpg"></td>
+                <td><img  class="imgtop"src="images/culturedesti.jpg"></td>
+            </tr>
+            <tr>
+              <td colspan="4" class="td"><h2><b>Travellers’ Choice: Top hotels</b></h2></td>
+            </tr>
+            <tr>
+              <td>
+            <div class="card">
+              <img src="images/lemontree.png" class="card-img-top" alt="...">
+            
+              <div class="card-body">
+                <h5 class="card-title">Lemon Tree</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn ">Show Prices</a>
+              </div>
+            </div>
+          </td>
+          <td> 
+            <div class="card">
+                <img src="images/polotower.png" class="card-img-top" alt="...">
+              
+                <div class="card-body">
+                  <h5 class="card-title">Polo Tower</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn ">Show Prices</a>
+                </div></div>
+              </td>
+            <td>
+              <div class="card">
+                <img src="images/tamara.jpg" class="card-img-top" alt="...">
+              
+                <div class="card-body">
+                  <h5 class="card-title">Tamara</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn">Show Prices</a>
+                </div></div>
+              </td>
+            <td>
+              <div class="card">
+                <img src="images/saroverHotel.jpg" height="250px" class="card-img-top" alt="...">
+              
+                <div class="card-body">
+                  <h5 class="card-title">Sarovar Portico</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn ">Show Prices</a>
+                </div></div>
+              </td>
+            </tr>
+        </table>
+       <div class="tablediv3">
+        <table  class="tabledescrip" cellpadding="15px">
+            <tr class="tr2">
+              <td>
+                <h3>Why make  TripAdvisor</h3>
+                <p>Established in 2000, MakeMyTrip has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers. The experience of booking your flight tickets, hotel stay, and holiday package through our desktop site or mobile app can be done with complete ease and no hassles at all. We also deliver amazing offers, such as Instant Discounts, Fare Calendar, MyRewardsProgram, MyWallet, and many more while updating them from time to time to better suit our customers’ evolving needs and demands. </p>
+              </td>
+              <td colspan="2">
+                <h3>Booking Flights with  TripAdvisor</h3>
+                <p>At  TripAdvisor, you can find the best of deals and cheap air tickets to any place you want by booking your tickets on our website or app. Being India’s leading website for hotel, flight, and holiday bookings, TripAdvisor helps you book flight tickets that are affordable and customized to your convenience. With customer satisfaction being our ultimate goal, we also have a 24/7 dedicated helpline to cater to our customer’s queries and concerns. Serving over 5 million happy customers, we at MakeMyTrip are glad to fulfill the dreams of folks who need a quick and easy means to find air tickets. You can get a hold of the cheapest flight of your choice today while also enjoying the other available options for your travel needs with us.</p>
+              </td>
+              <td>
+                <h3>Domestic Flights with  TripAdvisor</h3>
+                <p> TripAdvisor is India's leading player for flight bookings. With the cheapest fare guarantee, experience great value at the lowest price. Instant notifications ensure current flight status, instant fare drops, amazing discounts, instant refunds and rebook options, price comparisons and many more interesting features.</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" align="center"> 
+                
+                  <p>Copyright © 2022 Firstflight Travels All Rights Reserved.<br>Website developed by: Mohd. Rahil</p>
+          
+              </td>
+            </tr>
+          </div>
+        </table>
+        
+      
+      
+
+</body>
+</html>
